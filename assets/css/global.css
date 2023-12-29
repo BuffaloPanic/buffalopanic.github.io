@@ -17,7 +17,6 @@ html,
 body {
 	font-family: 'Hyper Regular';
 	color: var(--color-text-lite);
-	height: 100%;
 	font-size: 62.5%;
 	touch-action: manipulation;
 }
