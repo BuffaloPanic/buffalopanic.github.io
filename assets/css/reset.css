@@ -1,0 +1,245 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration: none;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+input[type='search']::-webkit-search-decoration {
+	display: none;
+}
+button,
+input,
+select {
+	margin: 0;
+	outline: 0;
+	vertical-align: middle;
+}
+button,
+input[type='reset'],
+input[type='submit'],
+input[type='button'] {
+	appearance: none;
+	-webkit-appearance: none;
+	background: none;
+	border: 0;
+	cursor: pointer;
+	overflow: visible;
+	padding: 0;
+	width: auto;
+}
+input[type='date'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='email'],
+input[type='month'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='time'],
+input[type='url'],
+input[type='week'],
+textarea {
+	border-radius: 0;
+	appearance: none;
+	-webkit-appearance: none;
+	background: none;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	text-align: left;
+}
+input:required,
+textarea:required {
+	box-shadow: none;
+}
+button[disabled],
+input[disabled],
+select[disabled],
+select[disabled] optgroup,
+select[disabled] option,
+textarea[disabled] {
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+select[multiple],
+select[size],
+textarea {
+	height: auto;
+}
+@media (-webkit-min-device-pixel-ratio: 0) {
+	select,
+	select[size='0'],
+	select[size='1'] {
+		height: 1.8em;
+	}
+}
+textarea {
+	min-height: 80px;
+	overflow: auto;
+	width: 100%;
+}
+optgroup {
+	font-style: normal;
+	font-weight: normal;
+}
+img {
+	vertical-align: bottom;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+	html {
+		-webkit-text-size-adjust: none;
+	}
+}
