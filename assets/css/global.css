@@ -38,7 +38,7 @@ h3 {
 }
 
 main {
-	max-width: 375px;
+	max-width: 420px;
 	margin: 20px auto;
 }
 header {
@@ -61,7 +61,7 @@ section {
 
 ul.linklist {
 	margin: 0;
-	padding: 0;
+	padding: 0 16px;
 }
 ul li {
 	margin: 16px 0;
