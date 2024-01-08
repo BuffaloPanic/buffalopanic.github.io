@@ -92,7 +92,7 @@ ul li {
 	padding: 0;
 }
 ul li > a {
-	border-radius: 16px;
+	border-radius: 14px;
 	display: block;
 	padding: 14px;
 	background-color: var(--color-bg-darker);
