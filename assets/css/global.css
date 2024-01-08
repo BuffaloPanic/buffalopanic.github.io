@@ -76,10 +76,10 @@ div.ribbon-black {
 }
 div.ribbon-black span {
 	display: inline-block;
-	padding: 0 16px 0 10px;
+	padding: 0 16px 0 9px;
 	background-image: url('../../assets/img/bullet.svg');
 	background-repeat: no-repeat;
-	background-position: center right;
+	background-position: right 3px;
 }
 
 ul.linklist {
