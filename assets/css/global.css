@@ -2,15 +2,16 @@
 @import '../css/fonts.css';
 
 :root {
-	--color-primary: #c1ff00;
-	--color-second: #990dce;
-	--color-second-translucent: #9b0dce78;
+	--color-primary: #f0e600;
+	--color-second: #178fe8;
 	--color-third: #ff1f9f;
-	--color-fourth: #ffa617;
-	--color-text-lite: #e7e7d3;
-	--color-white: #ffffff;
-	--color-bg: #10171f;
-	--color-bg-darker: #0d131a;
+	--color-fourth: #efd100;
+	--color-text: #878771;
+	--color-text-lite: #cdcda9;
+	--color-offwhite: #e7e7d3;
+	--color-white: #e7e7d3;
+	--color-bg: #292829;
+	--color-bg-darker: #1e1e1e;
 }
 
 html,
@@ -22,9 +23,7 @@ body {
 }
 
 html {
-	background-color: var(--color-bg);
-	background-image: url('../../assets/img/bg-lines-30degree.png');
-	background-repeat: repeat;
+	background-color: var(--color-offwhite);
 }
 
 body {
@@ -36,59 +35,84 @@ h3 {
 	font-family: 'Hyper Regular';
 	font-size: 1rem;
 }
-
-main {
-	max-width: 420px;
-	margin: 20px auto;
+div.sitebox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
 }
 header {
-	margin: 24px 0;
+	background-color: var(--color-primary);
+	background-image: url('../../assets/img/header-bg.svg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	max-height: 240px;
+	border-bottom: 3px solid var(--color-fourth);
+}
+header img {
+	max-width: 420px;
+	margin: 16px;
+}
+main {
+	flex-grow: 2;
 }
 footer {
-	margin: 48px 0;
+	background-color: var(--color-bg);
 }
 footer p {
-	color: var(--color-second-translucent);
-	margin-bottom: 24px;
+	color: var(--color-text-lite);
+	margin: 24px 0;
 }
-
-section {
-	background-image: url('../../assets/img/accent-end_dots.svg');
-	background-position: bottom center;
+div.ribbon-black {
+	display: flex;
+	flex-shrink: 0;
+	font-size: 1.4rem;
+	background-color: var(--color-bg-darker);
+	margin: 0;
+	padding: 8px 0;
+	overflow: hidden;
+	text-align: center;
+	user-select: none;
+}
+div.ribbon-black span {
+	display: inline-block;
+	padding: 0 16px 0 10px;
+	background-image: url('../../assets/img/bullet.svg');
 	background-repeat: no-repeat;
-	padding-bottom: 40px;
+	background-position: center right;
 }
 
 ul.linklist {
-	margin: 0;
-	padding: 0 16px;
+	max-width: 420px;
+	margin: 24px auto 0;
+	padding-bottom: 24px;
+	background-image: url('../../assets/img/accent-end_dots.svg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
 }
 ul li {
 	margin: 16px 0;
 	padding: 0;
 }
 ul li > a {
-	border-radius: 6px;
-	border: var(--color-second) 1px solid;
+	border-radius: 16px;
 	display: block;
 	padding: 14px;
-	background-color: var(--color-bg);
-	box-shadow: 0 0 8px var(--color-second-translucent);
+	background-color: var(--color-bg-darker);
 }
 ul li > a:hover {
 	background-color: var(--color-bg-darker);
-	box-shadow: 0 0 16px 2px var(--color-second-translucent);
 }
 ul li > a > h2 {
-	color: var(--color-primary);
+	color: var(--color-offwhite);
 	font-size: 2.4rem;
 	margin-bottom: 8px;
 }
 ul li > a > h3 {
-	color: var(--color-primary);
+	color: var(--color-offwhite);
 	font-size: 2rem;
 }
 ul li > a > p {
-	color: var(--color-text-lite);
+	color: var(--color-text);
 	font-size: 1.6rem;
 }
