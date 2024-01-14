@@ -17,7 +17,7 @@
 
 html,
 body {
-	background-color: var(--color-offwhite);
+	background-color: var(--color-bg-darker);
 	font-family: 'Hyper Regular';
 	color: var(--color-text-lite);
 	font-size: 62.5%;
@@ -49,11 +49,13 @@ header {
 	padding: 0 24px;
 }
 header img {
+	width: 100%;
 	max-width: 420px;
-	margin: 32px 0;
+	margin: 20px 0;
 }
 main {
-	margin: 0 24px 48px;
+	background-color: var(--color-offwhite);
+	padding: 0 24px 48px;
 	flex-grow: 2;
 }
 footer {
