@@ -12,7 +12,11 @@
 	--color-white: #e7e7d3;
 	--color-bg: #292829;
 	--color-bg-darker: #1e1e1e;
+	--color-shdw-darker: #29282921;
+	--color-shdw-darker-hvr: #2928290b;
 	--color-shdw: #cdcda991;
+
+	--max-width: 400px;
 }
 
 html,
@@ -23,7 +27,6 @@ body {
 	font-size: 62.5%;
 	touch-action: manipulation;
 }
-
 body {
 	font-size: 1.6rem;
 	text-align: center;
@@ -32,6 +35,11 @@ h2,
 h3 {
 	font-family: 'Hyper Regular';
 	font-size: 1rem;
+}
+h4 {
+	font-family: 'Hyper Bold';
+	font-size: 2.4rem;
+	color: var(--color-bg);
 }
 div.sitebox {
 	display: flex;
@@ -50,7 +58,7 @@ header {
 }
 header img {
 	width: 100%;
-	max-width: 420px;
+	max-width: var(--max-width);
 	margin: 20px 0;
 }
 main {
@@ -83,17 +91,31 @@ div.ribbon-black span {
 	background-repeat: no-repeat;
 	background-position: right 3px;
 }
-
+main h4 {
+	max-width: var(--max-width);
+	margin: 24px auto 8px;
+	text-align: left;
+	padding: 0 14px;
+}
+ul {
+	max-width: var(--max-width);
+	margin: 0 auto;
+}
+ul.latestlist {
+	background-image: url('../../assets/img/latest-design.png');
+	height: 400px;
+	padding: 12px;
+	border-radius: 14px;
+	background-size: cover;
+}
 ul.linklist {
-	max-width: 420px;
-	margin: 24px auto 0;
 	padding-bottom: 24px;
 	background-image: url('../../assets/img/accent-end_dots.svg');
 	background-position: center bottom;
 	background-repeat: no-repeat;
 }
 ul li {
-	margin: 16px 0;
+	margin: 0 0 16px;
 	padding: 0;
 }
 ul li > a {
@@ -104,14 +126,26 @@ ul li > a {
 	transition: all 0.1s ease-in-out;
 	box-shadow: 0 4px 0px var(--color-text-lite);
 }
+ul.latestlist li > a {
+	border-radius: 13px;
+	margin-top: 296px;
+	box-shadow: 0 4px 0px var(--color-shdw-darker);
+}
 ul li > a:hover {
 	transform: scale(1.04);
 	background-color: var(--color-bg-darker);
 	box-shadow: 0 16px 0px -8px var(--color-shdw);
 }
+ul.latestlist li > a:hover {
+	transform: scale(1.02);
+	box-shadow: 0 16px 0px -8px var(--color-shdw-darker-hvr);
+}
 ul li > a:active {
 	transform: scale(1);
 	box-shadow: 0 4px 0px var(--color-text-lite);
+}
+ul.latestlist li > a:active {
+	box-shadow: 0 4px 0px var(--color-shdw-darker);
 }
 ul li > a:active > * {
 	opacity: 0.5;
@@ -129,4 +163,5 @@ ul li > a > h3 {
 ul li > a > p {
 	color: var(--color-text);
 	font-size: 1.6rem;
+	line-height: 0.8;
 }
