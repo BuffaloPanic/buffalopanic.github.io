@@ -118,10 +118,10 @@ ul {
 ul.latestlist {
 	background-image: url('../../assets/img/latest-design-20241016.png');
 	height: 500px;
-	padding: 12px;
 	border-radius: 14px;
 	background-size: cover;
 	margin-bottom: 60px;
+	overflow: hidden;
 }
 
 ul.linklist {
@@ -141,6 +141,7 @@ ul li>a {
 	display: block;
 	padding: 16px;
 	width: 100%;
+	/* width: auto; */
 	background-color: var(--color-bg-darker);
 	transition: all 0.1s ease-in-out;
 	box-shadow: 0 4px 0px var(--color-text-lite);
@@ -149,13 +150,28 @@ ul li>a {
 ul.latestlist li {
 	height: 100%;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+ul.latestlist li>span {
+	display: block;
+	width: 100%;
+}
+
+
+ul.latestlist li>span img {
+	position: absolute;
+	width: 100%;
+	top: -10px;
+	left: 0;
 }
 
 ul.latestlist li>a {
-	position: absolute;
-	bottom: 0;
+	width: 92%;
+	margin: 0 auto 12px;
 	border-radius: 13px;
-	/* margin-top: 296px; */
 	box-shadow: 0 4px 0px var(--color-shdw-darker);
 }
 
