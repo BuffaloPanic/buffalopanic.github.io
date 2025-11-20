@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'NunitoBlack';
+    src: url('fonts/nunito.black-webfont.woff2') format('woff2'),
+        url('fonts/nunito.black-webfont.woff') format('woff');
+    /* Fallback for older browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoRegular';
+    src: url('fonts/nunito.regular-webfont.woff2') format('woff2'),
+        url('fonts/nunito.regular-webfont.woff') format('woff');
+    /* Fallback for older browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSemibold';
+    src: url('fonts/nunito.semibold-webfont.woff2') format('woff2'),
+        url('fonts/nunito.semibold-webfont.woff') format('woff');
+    /* Fallback for older browsers */
+    font-weight: normal;
+    font-style: normal;
+}

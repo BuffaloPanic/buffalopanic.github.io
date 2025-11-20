@@ -1,0 +1,470 @@
+@import url(reset.css);
+@import url(font.css);
+
+:root {
+    --yellow-colour: hsl(47 99 51 / 100);
+    --orange-colour: hsl(24 98 50 / 100);
+    --red-colour: hsl(346 98 51 / 100);
+    --purple-colour: hsl(239 100 76 / 100);
+    --blue-colour: hsl(204 90 54 / 100);
+    --green-colour: hsl(146 99 43 / 100);
+    --white: hsl(35 74 95 / 100);
+    --gray-dark: hsl(300 13 19 / 100);
+    --gray-darkest: hsl(300 13 15 / 100);
+
+    --fontsize-h1: clamp(2.4rem, 8vw, 5rem);
+}
+
+
+body {
+    font-family: 'NunitoRegular';
+    color: var(--gray-darkest);
+    background-color: var(--white);
+}
+
+.sitebox {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 14px 14px 0;
+    text-align: center;
+}
+
+.header-logo img {
+    max-height: 86px;
+}
+
+.header-qrcode {
+    display: none;
+}
+
+h1 {
+    font-size: clamp(1.7rem, 5.5vw, 2rem);
+    font-family: 'NunitoBlack';
+    letter-spacing: 0.5;
+}
+
+
+.main-grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 1px;
+    grid-template-areas:
+        'one'
+        'two'
+        'three'
+        'four';
+}
+
+.grid-block:nth-child(1) {
+    grid-area: one;
+}
+
+.grid-block:nth-child(2) {
+    grid-area: two;
+}
+
+.grid-block:nth-child(3) {
+    grid-area: three;
+}
+
+.grid-block:nth-child(4) {
+    grid-area: four;
+}
+
+.bg-yellow {
+    background-color: var(--yellow-colour);
+}
+
+.bg-orange {
+    color: var(--white);
+    letter-spacing: 0.5;
+    background-color: var(--orange-colour);
+}
+
+.bg-red {
+    color: var(--white);
+    letter-spacing: 0.5;
+    background-color: var(--red-colour);
+}
+
+.bg-purple {
+    color: var(--white);
+    letter-spacing: 0.5;
+    background-color: var(--purple-colour);
+}
+
+.bg-blue {
+    color: var(--white);
+    letter-spacing: 0.5;
+    background-color: var(--blue-colour);
+}
+
+.bg-green {
+    color: var(--white);
+    letter-spacing: 0.5;
+    background-color: var(--green-colour);
+}
+
+.bg-gray {
+    color: var(--white);
+    letter-spacing: 0.5;
+    background-color: var(--gray-darkest);
+}
+
+.grid-block {
+    padding: 12px;
+    /* background-color: #93877525; */
+}
+
+.grid-block>div {
+    border-radius: 28px;
+}
+
+/* HERO SECTION :::::::::::::::::::::::  */
+.section-hero {
+    position: relative;
+}
+
+.hero-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px;
+    z-index: 3;
+}
+
+.hero-text h1 {
+    font-size: clamp(2.4rem, 8vw, 3rem);
+    width: 60%;
+}
+
+.hero-text p {
+    color: #846701;
+    font-size: clamp(1.1rem, 3.6vw, 3rem);
+    line-height: 1.2;
+    width: 50%;
+    margin: 12px 0 3vw;
+}
+
+.hero-text a {
+    align-self: flex-start;
+}
+
+.hero-img {
+    position: absolute;
+    height: calc(100% + 14px);
+    width: 100vw;
+    bottom: -12px;
+    left: -12px;
+    z-index: 2;
+    background: url("../img/section/hero-phone@2x.png") center right -28px no-repeat;
+    /* background-color: teal; */
+    background-size: auto calc(100% + 32px);
+
+}
+
+
+
+/* LATEST ARTWORK SECTION :::::::::::::::::::::::  */
+.section-latest {
+    position: relative;
+}
+
+.latest-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    min-height: calc(100vw / 1.4);
+}
+
+.latest-text h1 {
+    margin: 14px 0 0 20px;
+}
+
+.latest-text a {
+    margin: 0 14px 14px 0;
+    align-self: flex-end;
+}
+
+
+.latest-img {
+    position: absolute;
+    height: calc(100% + 24px);
+    width: 100vw;
+    bottom: -12px;
+    left: -12px;
+    z-index: 2;
+    background: url("../img/section/latest-phone@2x.png") left -36px bottom -30px no-repeat;
+    /* background-color: teal; */
+    background-size: calc(100vw + 24px) auto;
+}
+
+
+
+
+/* LINKS SECTION :::::::::::::::::::::::  */
+.section-links {
+    padding: 14px 20px 24px;
+}
+
+.section-links h1 {
+    margin: 0 8px 14px 0px;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+a.link {
+    display: flex;
+    padding: 14px 14px;
+    border-radius: 14px;
+    color: var(--white);
+    background-color: #382b38;
+}
+
+a.link:hover {
+    background-color: #544054;
+}
+
+a.link img {
+    width: 32px;
+    align-items: center;
+}
+
+a.link span {
+    font-size: 1.2rem;
+    align-items: center;
+    line-height: 1.6;
+    margin-left: 14px;
+}
+
+
+
+
+
+/* STICKERS SECTION :::::::::::::::::::::::  */
+.section-stickers {
+    position: relative;
+}
+
+.stickers-text {
+    display: flex;
+    height: calc(100vw / 1.4);
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+}
+
+.stickers-text h1 {
+    margin: 14px 0 0 20px;
+}
+
+.stickers-text a {
+    margin: 0 14px 14px 0;
+    align-self: flex-end;
+}
+
+.stickers-img {
+    position: absolute;
+    height: calc(100% + 24px);
+    width: 100vw;
+    bottom: -12px;
+    left: -12px;
+    z-index: 2;
+    background: url("../img/section/stickers-phone@2x.png") center bottom 13px no-repeat;
+    background-size: calc(100vw / 1.15) auto;
+}
+
+
+
+a.btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: var(--white);
+    padding: 8px 42px 12px;
+    background-color: var(--gray-darkest);
+    border-radius: 14px;
+}
+
+a.btn span {
+    font-size: .9rem;
+    color: #938775;
+}
+
+a.btn:hover {
+    background-color: var(--gray-dark);
+}
+
+footer {
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.2rem;
+    color: #938775;
+    padding: 14px 0 80px;
+}
+
+footer>img {
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 16px 0 24px;
+}
+
+@media screen and (min-width: 760px) {
+
+    a.btn {
+        display: inline-block;
+        font-size: 1.2rem;
+        line-height: 1;
+        padding: 8px 42px 12px;
+    }
+
+    a.btn:hover {
+        background-color: var(--gray-dark);
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 14px;
+        text-align: left;
+    }
+
+    header div {
+        align-self: center;
+    }
+
+    .header-logo img {
+        max-height: auto;
+    }
+
+    .header-qrcode {
+        display: block;
+    }
+
+    .main-grid {
+        grid-template-areas:
+            'one one one'
+            'two two three'
+            'four four four';
+    }
+
+
+    /* HERO SECTION :::::::::::::::::::::::  */
+
+    .hero-text h1 {
+        width: 50%;
+    }
+
+    .hero-text p {
+        color: #846701;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        width: 40%;
+        margin: 12px 0 14px;
+    }
+
+    .hero-img {
+        height: calc(100% + 24px);
+        width: calc(100% + 24px);
+        background: url("../img/section/hero@2x.png") center right no-repeat;
+        background-size: auto 100%;
+        /* background-color: teal; */
+    }
+
+
+
+
+
+    /* LATEST ARTWORK SECTION :::::::::::::::::::::::  */
+    .section-latest {
+        height: 100%;
+    }
+
+    .latest-text {
+        height: inherit;
+        min-height: 254px;
+    }
+
+    .latest-text h1 {
+        margin: 14px 0 0 28px;
+    }
+
+    .latest-text a {
+        margin: 0 28px 24px 0;
+    }
+
+
+    .latest-img {
+        width: calc(100% + 24px);
+        background: url("../img/section/latest@2x.png") left bottom no-repeat;
+        /* background-color: teal; */
+        background-size: calc(100%) auto;
+    }
+
+
+
+
+    /* LINKS SECTION :::::::::::::::::::::::  */
+    .links-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    a.link {
+        padding: 10px 14px;
+    }
+
+    a.link img {
+        width: 24px;
+    }
+
+    a.link span {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+
+
+
+
+    /* STICKERS SECTION :::::::::::::::::::::::  */
+    .section-stickers {
+        height: 288px;
+        padding: 14px 28px;
+    }
+
+    .stickers-text {
+        height: 100%;
+    }
+
+    .stickers-text h1 {
+        margin: 0;
+    }
+
+    .stickers-text a {
+        margin: 0;
+    }
+
+
+    .stickers-img {
+        width: calc(100%);
+        background: url("../img/section/stickers@2x.png") left -8px bottom 12px no-repeat;
+        background-size: calc(100%) auto;
+    }
+
+}
