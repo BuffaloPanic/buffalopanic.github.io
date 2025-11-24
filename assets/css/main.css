@@ -53,8 +53,8 @@ h1 {
     gap: 1px;
     grid-template-areas:
         'one'
-        'two'
         'three'
+        'two'
         'four';
 }
 
@@ -135,36 +135,33 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     padding: 28px;
-    z-index: 3;
+    padding-top: calc(100vw / 1.5);
+    text-align: center;
 }
 
 .hero-text h1 {
     font-size: clamp(2.4rem, 8vw, 3rem);
-    width: 60%;
+    width: 100%;
 }
 
 .hero-text p {
     color: #846701;
     font-size: clamp(1.1rem, 3.6vw, 3rem);
     line-height: 1.2;
-    width: 50%;
-    margin: 12px 0 3vw;
+    width: 65%;
+    margin: 12px auto 12px;
 }
 
-.hero-text a {
-    align-self: flex-start;
-}
 
 .hero-img {
     position: absolute;
-    height: calc(100% + 14px);
-    width: 100vw;
-    bottom: -12px;
+    height: calc(100vw / 1.5);
+    width: calc(100% + 24px);
+    top: -12px;
     left: -12px;
-    z-index: 2;
-    background: url("../img/section/hero-phone@2x.png") center right -28px no-repeat;
+    background: url("../img/section/hero@2x.png") center center no-repeat;
     /* background-color: teal; */
-    background-size: auto calc(100% + 32px);
+    background-size: calc(100%) auto;
 
 }
 
@@ -243,7 +240,7 @@ a.link img {
 }
 
 a.link span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     align-items: center;
     line-height: 1.6;
     margin-left: 14px;
@@ -368,8 +365,14 @@ footer p {
 
     /* HERO SECTION :::::::::::::::::::::::  */
 
+    .hero-text {
+        padding-top: 28px;
+        text-align: left;
+    }
+
     .hero-text h1 {
         width: 50%;
+
     }
 
     .hero-text p {
@@ -378,7 +381,13 @@ footer p {
         line-height: 1.2;
         width: 40%;
         margin: 12px 0 14px;
+        z-index: 3;
     }
+
+    .hero-text a {
+        align-self: flex-start;
+    }
+
 
     .hero-img {
         height: calc(100% + 24px);
