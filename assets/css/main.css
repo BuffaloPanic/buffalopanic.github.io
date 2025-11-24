@@ -126,6 +126,7 @@ h1 {
 /* HERO SECTION :::::::::::::::::::::::  */
 .section-hero {
     position: relative;
+    z-index: 0;
 }
 
 .hero-text {
@@ -172,6 +173,7 @@ h1 {
 /* LATEST ARTWORK SECTION :::::::::::::::::::::::  */
 .section-latest {
     position: relative;
+    z-index: 0;
 }
 
 .latest-text {
