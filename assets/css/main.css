@@ -75,7 +75,7 @@ h1 {
 }
 
 .bg-yellow {
-    background-color: #fec706;
+    background-color: var(--yellow-colour);
 }
 
 .bg-orange {
