@@ -386,6 +386,7 @@ footer p {
 
     .hero-text a {
         align-self: flex-start;
+        z-index: 3;
     }
 
 
