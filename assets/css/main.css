@@ -75,7 +75,7 @@ h1 {
 }
 
 .bg-yellow {
-    background-color: var(--yellow-colour);
+    background-color: hsl(47 99 51 / 100);
 }
 
 .bg-orange {
